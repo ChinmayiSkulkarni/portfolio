@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(120deg, #6a11cb, #2575fc);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      position: sticky;
+      top: 0;
+    }
+    header a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    header a:hover {
+      color: #ff9800;
+    }
+
+    .container {
+      flex: 1;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      margin: 30px auto;
+      border-radius: 20px;
+      text-align: left;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+      max-width: 900px;
+      width: 90%;
+    }
+
+    h1, h2 {
+      color: #ffcc80;
+      margin-bottom: 10px;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+      padding-bottom: 5px;
+    }
+
+    ul {
+      margin: 10px 0 20px 20px;
+      line-height: 1.8;
+    }
+
+    /* Footer */
+    footer {
+      background: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 15px;
+      margin-top: auto;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="index.html">Home</a>
+    <a href="biodata.html">Bio-Data</a>
+    <a href="resume.html">Resume</a>
+  </header>
+
+  <!-- Main Resume Content -->
+  <div class="container">
+    <h1>My Resume</h1>
+
+    <h2>Career Objective</h2>
+    <p>To apply my computer skills and gain practical experience while contributing to real-world projects.</p>
+
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.E in CSE:</strong> SKSVMACET (CGPA: 8.25)</li>
+      <li><strong>PUC (PCMB):</strong> Devika PU College, Ranebennur (80%)</li>
+      <li><strong>SSLC:</strong> Devika School (82%)</li>
+    </ul>
+
+    <h2>Projects</h2>
+    <ul>
+      <li>Canteen Management System (HTML, CSS)</li>
+      <li>Simple Calculator (HTML, CSS, JavaScript)</li>
+      <li>Gamified Learning Website (HTML, CSS, JavaScript)</li>
+    </ul>
+
+    <h2>Certificates</h2>
+    <ul>
+      <li>Python</li>
+      <li>Cybersecurity</li>
+      <li>Machine Learning</li>
+      <li>C Programming</li>
+    </ul>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>C, Python</li>
+      <li>Operating Systems</li>
+      <li>Problem Solving</li>
+      <li>Time Management</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p><strong>Phone:</strong> 8088657185</p>
+    <p><strong>Email:</strong> chinmayik979@gmail.com</p>
+    <p><strong>Address:</strong> At Post Kuppeluru, Tq Ranebennur, Dist Haveri</p>
+    <p><strong>LinkedIn:</strong> 
+      <a href="https://linkedin.com/in/chinmayi-s-kulkarni" target="_blank" style="color:#ffcc80;">
+        linkedin.com/in/chinmayi-s-kulkarni
+      </a>
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Chinmayi S K | All Rights Reserved
+  </footer>
+
+  <script>
+    // Hover animation on main title
+    const heading = document.querySelector("h1");
+    heading.addEventListener("mouseover", () => {
+      heading.style.color = "#ffeb3b";
+    });
+    heading.addEventListener("mouseout", () => {
+      heading.style.color = "#ffcc80";
+    });
+  </script>
+</body>
+</html>

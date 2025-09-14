@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bio-Data Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(120deg, #6a11cb, #2575fc);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      position: sticky;
+      top: 0;
+    }
+    header a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    header a:hover {
+      color: #ff9800;
+    }
+
+    .container {
+      flex: 1;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+      max-width: 750px;
+      width: 90%;
+      margin: 30px auto;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #ffcc80;
+    }
+
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    td {
+      padding: 12px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      text-align: left;
+    }
+    td:first-child {
+      font-weight: bold;
+      width: 35%;
+      color: #ffcc80;
+    }
+
+    /* Footer */
+    footer {
+      background: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="index.html">Home</a>
+    <a href="biodata.html">Bio-Data</a>
+    <a href="resume.html">Resume</a>
+  </header>
+
+  <!-- Main Bio Data Content -->
+  <div class="container">
+    <h1>My Bio-Data</h1>
+    <table>
+      <tr><td>Name:</td><td>Chinmayi S K</td></tr>
+      <tr><td>Father's Name:</td><td>Mr. Shashidhar S K</td></tr>
+      <tr><td>Father's Occupation:</td><td>Farmer</td></tr>
+      <tr><td>Mother's Name:</td><td>Mrs. Padmavathi</td></tr>
+      <tr><td>Date of Birth:</td><td>01-09-2004</td></tr>
+      <tr><td>Height:</td><td>5'9"</td></tr>
+      <tr><td>Qualification:</td><td>B.E(CSE) Pursuing - SKSVMACET</td></tr>
+      <tr><td>Caste:</td><td>General</td></tr>
+      <tr><td>Siblings:</td><td>No</td></tr>
+      <tr><td>Address:</td><td>AT Post Kuppeluru, Tq-Ranebennur, Dist-Haveri, PinCode-581119</td></tr>
+      <tr><td>Phone Number:</td><td>+91 8088657185</td></tr>
+      <tr><td>Email ID:</td><td>chinmayik@gmail.com</td></tr>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Chinmayi S K | All Rights Reserved
+  </footer>
+
+  <script>
+    const heading = document.querySelector("h1");
+    heading.addEventListener("mouseover", () => {
+      heading.style.color = "#ffeb3b";
+    });
+    heading.addEventListener("mouseout", () => {
+      heading.style.color = "#ffcc80";
+    });
+  </script>
+</body>
+</html>
